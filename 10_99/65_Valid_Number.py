@@ -5,4 +5,4 @@ class Solution:
         except:
             return False
 
-        return True
+        return "inf" not in s.lower()
