@@ -31,7 +31,7 @@ class Solution:
             for word in next_words:
                 for i in range(len(word)):
                     for char in "abcdefghijklmnopqrstuvwxyz":
-                        w = word[0:i] + char + word[i + 1:]
+                        w = word[:i] + char + word[i + 1:]
 
                         if w in wordList:
                             diff1_words.add(w)
