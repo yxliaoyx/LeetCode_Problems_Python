@@ -6,10 +6,7 @@ class WordDictionary:
         node = self.trie
 
         for w in word:
-            if w not in node:
-                node[w] = {}
-
-            node = node[w]
+            node = node.setdefault(w, {})
 
         node["end"] = False
 
